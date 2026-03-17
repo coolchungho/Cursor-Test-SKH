@@ -7,6 +7,18 @@ export interface CaseSearchCriteria {
   identifier?: string;
   birthdate?: string;
   gender?: string;
+  /** 案件類別：關節置換、疼痛照護、乳癌 */
+  caseCategory?: string;
+  /** 住院狀態：住院中、已出院 */
+  hospitalizationStatus?: string;
+  /** 收案狀態：已收案、篩選中、不收案 */
+  intakeStatus?: string;
+  /** 回覆狀態：已回覆、未回覆 */
+  replyStatus?: string;
+  admissionDateStart?: string;
+  admissionDateEnd?: string;
+  dischargeDateStart?: string;
+  dischargeDateEnd?: string;
 }
 
 export function useCaseSearch() {
